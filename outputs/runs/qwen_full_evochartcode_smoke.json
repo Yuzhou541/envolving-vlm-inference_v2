@@ -1,0 +1,14 @@
+{
+  "num_examples": 1,
+  "exact_match": 1.0,
+  "relaxed_numeric": 1.0,
+  "invalid_rate": 0.0,
+  "na_precision": 0.0,
+  "na_recall": 0.0,
+  "na_f1": 0.0,
+  "mean_latency": 9.764127499991446,
+  "p95_latency": 9.764127499991446,
+  "method": "full_evochartcode",
+  "split": "validation",
+  "policy": {}
+}

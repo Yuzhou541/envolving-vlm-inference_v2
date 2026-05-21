@@ -1,0 +1,43 @@
+{
+  "num_examples": 2,
+  "exact_match": 1.0,
+  "relaxed_numeric": 1.0,
+  "invalid_rate": 0.0,
+  "na_precision": 0.0,
+  "na_recall": 0.0,
+  "na_f1": 0.0,
+  "mean_latency": 4.682652200004668,
+  "p95_latency": 9.213402499997756,
+  "dataset": "FigureQA",
+  "method": "full_evochartcode",
+  "status": "partial",
+  "completed_shards": 1,
+  "total_shards": 3,
+  "manifest_examples": 114,
+  "chart_code_cache": "data\\cache\\chart_codes\\transfer_qwen_smoke\\FigureQA",
+  "prediction_dir": "outputs\\transfer_qwen_smoke\\FigureQA\\predictions",
+  "exact_match_ci": {
+    "mean": 1.0,
+    "low": 1.0,
+    "high": 1.0,
+    "samples": 2
+  },
+  "relaxed_numeric_ci": {
+    "mean": 1.0,
+    "low": 1.0,
+    "high": 1.0,
+    "samples": 2
+  },
+  "invalid_rate_ci": {
+    "mean": 0.0,
+    "low": 0.0,
+    "high": 0.0,
+    "samples": 2
+  },
+  "mean_latency_ci": {
+    "mean": 4.682652200004668,
+    "low": 0.15190190001158044,
+    "high": 9.213402499997756,
+    "samples": 2
+  }
+}

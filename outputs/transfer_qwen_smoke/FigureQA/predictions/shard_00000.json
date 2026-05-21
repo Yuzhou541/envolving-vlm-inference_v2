@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "FigureQA_00000000_0",
+    "question": "Is Pale Green the minimum?",
+    "answer": "No.",
+    "prediction": "No",
+    "latency": 9.213402499997756,
+    "task": "FigureQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no extrema evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "FigureQA_00000000_1",
+    "question": "Is Dark Red the maximum?",
+    "answer": "No.",
+    "prediction": "No",
+    "latency": 0.15190190001158044,
+    "task": "FigureQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no extrema evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  }
+]

@@ -1,0 +1,1922 @@
+[
+  {
+    "query_id": "0_0",
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "60",
+    "prediction": "60",
+    "latency": 16.102237699989928,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 10, 20, 30, 40, 50, 60",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "0_1",
+    "question": "For the subplot at row 1 and column 2, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "prediction": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "latency": 3.045977400004631,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "0_2",
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Yes",
+    "prediction": "Yes",
+    "latency": 1.9053971999965142,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "0_3",
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "60",
+    "latency": 1.9460552000091411,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "3_0",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "1 by 2",
+    "prediction": "1 by 1",
+    "latency": 0.2843214999884367,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "3_1",
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "(b) OPT",
+    "prediction": "(b) OPT",
+    "latency": 1.2580950000265148,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "3_2",
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "answer": "2",
+    "prediction": "1",
+    "latency": 0.17448819999117404,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "3_3",
+    "question": "For the subplot at row 1 and column 2, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 1.2785692000179552,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "5_0",
+    "question": "For the subplot at row 2 and column 2, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "0.2",
+    "prediction": "0.2",
+    "latency": 0.6669441999983974,
+    "task": "descriptive",
+    "figure_id": "5",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "5_1",
+    "question": "For the subplot at row 2 and column 2, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "1.2",
+    "prediction": "1.2",
+    "latency": 0.3785679999855347,
+    "task": "descriptive",
+    "figure_id": "5",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "5_2",
+    "question": "For the subplot at row 2 and column 2, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "10^-6",
+    "prediction": "10^-6",
+    "latency": 0.409437499998603,
+    "task": "descriptive",
+    "figure_id": "5",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "5_3",
+    "question": "For the subplot at row 2 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 0.6246320999925956,
+    "task": "descriptive",
+    "figure_id": "5",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "7_0",
+    "question": "For the subplot at row 2 and column 2, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "14",
+    "prediction": "10",
+    "latency": 0.3466770999948494,
+    "task": "descriptive",
+    "figure_id": "7",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "7_1",
+    "question": "For the subplot at row 2 and column 2, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "1",
+    "latency": 0.7971224000211805,
+    "task": "descriptive",
+    "figure_id": "7",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "7_2",
+    "question": "For the subplot at row 2 and column 2, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Daily New Confirmed COVID-19 Case Number (Weekly Moving Average)",
+    "prediction": "Daily New Confirmed COVID-19 Case Number (Weekly Moving Average)",
+    "latency": 1.248312999989139,
+    "task": "descriptive",
+    "figure_id": "7",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "7_3",
+    "question": "For the subplot at row 2 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 0.8667497999849729,
+    "task": "descriptive",
+    "figure_id": "7",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "13_0",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "1 by 1",
+    "prediction": "1 by 1",
+    "latency": 0.3807825999974739,
+    "task": "descriptive",
+    "figure_id": "13",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "13_1",
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Attribution IoU",
+    "prediction": "Attribution IoU",
+    "latency": 0.9821617999987211,
+    "task": "descriptive",
+    "figure_id": "13",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "13_2",
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0.4",
+    "prediction": "0.4",
+    "latency": 0.3332294999854639,
+    "task": "descriptive",
+    "figure_id": "13",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "13_3",
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "0.4",
+    "latency": 0.934554700012086,
+    "task": "descriptive",
+    "figure_id": "13",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "14_0",
+    "question": "For the current plot, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "4",
+    "prediction": "4",
+    "latency": 1.3534566000162158,
+    "task": "descriptive",
+    "figure_id": "14",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "14_1",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Accuracy (%)",
+    "prediction": "Accuracy (%)",
+    "latency": 1.3788669000205118,
+    "task": "descriptive",
+    "figure_id": "14",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "14_2",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "1.0",
+    "latency": 1.4362154999980703,
+    "task": "descriptive",
+    "figure_id": "14",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "14_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Accuracy vs. Time",
+    "latency": 1.4244898000033572,
+    "task": "descriptive",
+    "figure_id": "14",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "17_0",
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Number of pixel-level annotations (log-scale)",
+    "prediction": "Number of pixel-level annotations (log-scale)",
+    "latency": 306.2121258999978,
+    "task": "descriptive",
+    "figure_id": "17",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "17_1",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "10",
+    "prediction": "10",
+    "latency": 503.6912799999991,
+    "task": "descriptive",
+    "figure_id": "17",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "17_2",
+    "question": "For the current plot, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "90",
+    "prediction": "90",
+    "latency": 0.2846248999994714,
+    "task": "descriptive",
+    "figure_id": "17",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "30, 40, 50, 60, 70, 80, 90",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "17_3",
+    "question": "For the current plot, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "No",
+    "latency": 310.63841200000024,
+    "task": "descriptive",
+    "figure_id": "17",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "20_0",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "0.05",
+    "prediction": "0.05",
+    "latency": 0.6879289000062272,
+    "task": "descriptive",
+    "figure_id": "20",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "20_1",
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "16",
+    "prediction": "10",
+    "latency": 0.26457830000435933,
+    "task": "descriptive",
+    "figure_id": "20",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "20_2",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "1 by 1",
+    "prediction": "1 by 1",
+    "latency": 0.3412512000068091,
+    "task": "descriptive",
+    "figure_id": "20",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "20_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Proportion of papers by degree",
+    "latency": 0.7079324999940582,
+    "task": "descriptive",
+    "figure_id": "20",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "30_0",
+    "question": "For the current plot, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "7",
+    "prediction": "7",
+    "latency": 0.5107333000050858,
+    "task": "descriptive",
+    "figure_id": "30",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "30_1",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "0.5",
+    "latency": 0.5933392999868374,
+    "task": "descriptive",
+    "figure_id": "30",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "30_2",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "PPL (10^2)",
+    "prediction": "PPL (10²)",
+    "latency": 0.7020156999933533,
+    "task": "descriptive",
+    "figure_id": "30",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "30_3",
+    "question": "For the current plot, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "5",
+    "latency": 0.5090652999933809,
+    "task": "descriptive",
+    "figure_id": "30",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "39_0",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "0.25",
+    "prediction": "0.25",
+    "latency": 1.2617103999946266,
+    "task": "descriptive",
+    "figure_id": "39",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "39_1",
+    "question": "For the current plot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "-1.00",
+    "prediction": "-1.00",
+    "latency": 0.5277242999873124,
+    "task": "descriptive",
+    "figure_id": "39",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "39_2",
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "18",
+    "prediction": "18",
+    "latency": 0.38534869998693466,
+    "task": "descriptive",
+    "figure_id": "39",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked total tick count",
+      "suggested_answer": "18",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "39_3",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 1.2224897000123747,
+    "task": "descriptive",
+    "figure_id": "39",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "40_0",
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "13",
+    "prediction": "14",
+    "latency": 0.22829379999893717,
+    "task": "descriptive",
+    "figure_id": "40",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "40_1",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Validation Score",
+    "prediction": "Validation Score",
+    "latency": 0.3071629999903962,
+    "task": "descriptive",
+    "figure_id": "40",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "40_2",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "macro, micro",
+    "prediction": "macro, micro",
+    "latency": 0.3440574000123888,
+    "task": "descriptive",
+    "figure_id": "40",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "40_3",
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "CIT, COR, MED, CS, CMP, PHO, PHY",
+    "latency": 0.7339332999836188,
+    "task": "descriptive",
+    "figure_id": "40",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "41_0",
+    "question": "For the subplot at row 4 and column 3, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0.40",
+    "prediction": "0.98",
+    "latency": 0.4660260000091512,
+    "task": "descriptive",
+    "figure_id": "41",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "41_1",
+    "question": "For the subplot at row 4 and column 3, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "LARA (ε = 1)",
+    "prediction": "Clean accuracy",
+    "latency": 0.8329879999801051,
+    "task": "descriptive",
+    "figure_id": "41",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "41_2",
+    "question": "For the subplot at row 4 and column 3, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "0.05",
+    "prediction": "0.02",
+    "latency": 0.9257047999999486,
+    "task": "descriptive",
+    "figure_id": "41",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "41_3",
+    "question": "For the subplot at row 4 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "1.0",
+    "latency": 0.8700266999949235,
+    "task": "descriptive",
+    "figure_id": "41",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "42_0",
+    "question": "For the current plot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "-0.8",
+    "prediction": "-0.8",
+    "latency": 0.4354370000073686,
+    "task": "descriptive",
+    "figure_id": "42",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "-0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "42_1",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "PD-HDDPG, proposed, PD-DDPG, plain, LO-CU, RCU",
+    "prediction": "PD-HDDPG, proposed, PD-DDPG, plain, LO-CU, RCU",
+    "latency": 1.237387499975739,
+    "task": "descriptive",
+    "figure_id": "42",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "42_2",
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Epoch",
+    "prediction": "Epoch",
+    "latency": 0.652429999987362,
+    "task": "descriptive",
+    "figure_id": "42",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "42_3",
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "0.1",
+    "latency": 0.7067318999907002,
+    "task": "descriptive",
+    "figure_id": "42",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "61_0",
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Noise Level",
+    "prediction": "Noise Level",
+    "latency": 0.7112829000107013,
+    "task": "descriptive",
+    "figure_id": "61",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "61_1",
+    "question": "For the current plot, what is the general trend of data from left to right?\n    * Your final answer should be within a few words, such as \"increases\", \"increases then stabilizes\".",
+    "answer": "decreases",
+    "prediction": "decreasing",
+    "latency": 0.4121533000143245,
+    "task": "descriptive",
+    "figure_id": "61",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "checked derived trend terms",
+      "suggested_answer": null,
+      "confidence": 0.65
+    }
+  },
+  {
+    "query_id": "61_2",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Class pair: 3 and 8, Class pair: 1 and 9",
+    "prediction": "Class pair: 3 and 8, Class pair: 1 and 9",
+    "latency": 1.1921352999925148,
+    "task": "descriptive",
+    "figure_id": "61",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "61_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Accuracy vs Noise Level",
+    "latency": 0.7508815999899525,
+    "task": "descriptive",
+    "figure_id": "61",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "75_0",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Total Time Taken",
+    "prediction": "Total Time Taken",
+    "latency": 0.6058001999917906,
+    "task": "descriptive",
+    "figure_id": "75",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "75_1",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "R52",
+    "prediction": "R52",
+    "latency": 0.5853567000012845,
+    "task": "descriptive",
+    "figure_id": "75",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "75_2",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "200",
+    "prediction": "200.0",
+    "latency": 0.6758533999964129,
+    "task": "descriptive",
+    "figure_id": "75",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "75_3",
+    "question": "For the current plot, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "No",
+    "latency": 0.5214468000049237,
+    "task": "descriptive",
+    "figure_id": "75",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "84_0",
+    "question": "For the subplot at row 1 and column 3, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0",
+    "prediction": "0",
+    "latency": 0.1625441999931354,
+    "task": "descriptive",
+    "figure_id": "84",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 0.2, 0.4, 0.6, 0.8, 1",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "84_1",
+    "question": "For the subplot at row 1 and column 3, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "12",
+    "prediction": "12",
+    "latency": 0.18283210002118722,
+    "task": "descriptive",
+    "figure_id": "84",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked total tick count",
+      "suggested_answer": "12",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "84_2",
+    "question": "For the subplot at row 1 and column 3, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0",
+    "prediction": "40",
+    "latency": 0.1836712000076659,
+    "task": "descriptive",
+    "figure_id": "84",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 20, 40, 60, 80, 100",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "84_3",
+    "question": "For the subplot at row 1 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "65",
+    "latency": 1.013271200004965,
+    "task": "descriptive",
+    "figure_id": "84",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "87_0",
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "en-de",
+    "prediction": "en-de",
+    "latency": 0.5686699000070803,
+    "task": "descriptive",
+    "figure_id": "87",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "87_1",
+    "question": "For the subplot at row 1 and column 2, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0",
+    "prediction": "0",
+    "latency": 0.23514110001269728,
+    "task": "descriptive",
+    "figure_id": "87",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "87_2",
+    "question": "For the subplot at row 1 and column 2, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "3",
+    "prediction": "2",
+    "latency": 0.4902327999880072,
+    "task": "descriptive",
+    "figure_id": "87",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "87_3",
+    "question": "For the subplot at row 1 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "100",
+    "latency": 0.5756463000143413,
+    "task": "descriptive",
+    "figure_id": "87",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "96_0",
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "MovieLens",
+    "prediction": "Frappe",
+    "latency": 0.4619267999951262,
+    "task": "descriptive",
+    "figure_id": "96",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "96_1",
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0.240",
+    "prediction": "0.9810",
+    "latency": 0.34771030000410974,
+    "task": "descriptive",
+    "figure_id": "96",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0.9810, 0.9805, 0.9800, 0.9795, 0.240, 0.235, 0.230, 0.225, 0.220, 0.18, 0.18",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "96_2",
+    "question": "For the subplot at row 1 and column 2, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "2",
+    "latency": 0.39155190001474693,
+    "task": "descriptive",
+    "figure_id": "96",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "96_3",
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "0.9810",
+    "latency": 0.5458553000062238,
+    "task": "descriptive",
+    "figure_id": "96",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "104_0",
+    "question": "For the subplot at row 1 and column 2, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "3",
+    "prediction": "2",
+    "latency": 0.3104272999917157,
+    "task": "descriptive",
+    "figure_id": "104",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "104_1",
+    "question": "For the subplot at row 1 and column 2, what is the general trend of data from left to right?\n    * Your final answer should be within a few words, such as \"increases\", \"increases then stabilizes\".",
+    "answer": "decreases then increases",
+    "prediction": "1 by 1",
+    "latency": 0.2896623999986332,
+    "task": "descriptive",
+    "figure_id": "104",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "104_2",
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "answer": "2",
+    "prediction": "1",
+    "latency": 0.15180550000513904,
+    "task": "descriptive",
+    "figure_id": "104",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "104_3",
+    "question": "For the subplot at row 1 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "18",
+    "latency": 0.32509319999371655,
+    "task": "descriptive",
+    "figure_id": "104",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "110_0",
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "answer": "2",
+    "prediction": "1",
+    "latency": 0.15688890000456013,
+    "task": "descriptive",
+    "figure_id": "110",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "110_1",
+    "question": "For the subplot at row 1 and column 2, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "7",
+    "prediction": "7",
+    "latency": 0.15484180001658387,
+    "task": "descriptive",
+    "figure_id": "110",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "-2, -1, 0, 1, 2, 3, 4, 5, 6, 7",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "110_2",
+    "question": "For the subplot at row 1 and column 2, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "1.0",
+    "latency": 0.6245734000112861,
+    "task": "descriptive",
+    "figure_id": "110",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "110_3",
+    "question": "For the subplot at row 1 and column 2, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "2",
+    "latency": 0.5557781999814324,
+    "task": "descriptive",
+    "figure_id": "110",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "113_0",
+    "question": "For the subplot at row 1 and column 5, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "Concept",
+    "prediction": "0.00",
+    "latency": 0.3097752000030596,
+    "task": "descriptive",
+    "figure_id": "113",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "113_1",
+    "question": "For the subplot at row 1 and column 5, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "8",
+    "prediction": "10",
+    "latency": 0.2116346999828238,
+    "task": "descriptive",
+    "figure_id": "113",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "113_2",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "2 by 5",
+    "prediction": "1 by 1",
+    "latency": 0.28331520000938326,
+    "task": "descriptive",
+    "figure_id": "113",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "113_3",
+    "question": "For the subplot at row 1 and column 5, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "0.05",
+    "latency": 0.5760750999907032,
+    "task": "descriptive",
+    "figure_id": "113",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "125_0",
+    "question": "For the subplot at row 1 and column 3, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "13",
+    "prediction": "10",
+    "latency": 0.16638129999046214,
+    "task": "descriptive",
+    "figure_id": "125",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "125_1",
+    "question": "For the subplot at row 1 and column 3, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "iteration",
+    "prediction": "iteration",
+    "latency": 0.24453950001043268,
+    "task": "descriptive",
+    "figure_id": "125",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "125_2",
+    "question": "For the subplot at row 1 and column 3, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "4",
+    "prediction": "4",
+    "latency": 0.23266170002170838,
+    "task": "descriptive",
+    "figure_id": "125",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "125_3",
+    "question": "For the subplot at row 1 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "1.0",
+    "latency": 0.29939880000893027,
+    "task": "descriptive",
+    "figure_id": "125",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "132_0",
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "1",
+    "prediction": "0",
+    "latency": 0.2293604000005871,
+    "task": "descriptive",
+    "figure_id": "132",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 25, 50, 75, 100, 125, 150, 175, 200",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "132_1",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Val. Acc. (%)",
+    "prediction": "Val. Acc. (%)",
+    "latency": 0.6180772999941837,
+    "task": "descriptive",
+    "figure_id": "132",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "132_2",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "SGD, K-FAC, Target",
+    "prediction": "SGD, K-FAC, Target",
+    "latency": 0.7185939999762923,
+    "task": "descriptive",
+    "figure_id": "132",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "132_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 0.5518691999895964,
+    "task": "descriptive",
+    "figure_id": "132",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "157_0",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Chains",
+    "prediction": "Chains",
+    "latency": 0.8465958000160754,
+    "task": "descriptive",
+    "figure_id": "157",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "157_1",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "200",
+    "prediction": "200",
+    "latency": 0.9022887999890372,
+    "task": "descriptive",
+    "figure_id": "157",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "157_2",
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "10",
+    "prediction": "10",
+    "latency": 0.8595821000053547,
+    "task": "descriptive",
+    "figure_id": "157",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "157_3",
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "3400",
+    "latency": 0.8953089000133332,
+    "task": "descriptive",
+    "figure_id": "157",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "159_0",
+    "question": "For the subplot at row 4 and column 4, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Valence",
+    "prediction": "Valence",
+    "latency": 2.1671413999865763,
+    "task": "descriptive",
+    "figure_id": "159",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "159_1",
+    "question": "For the subplot at row 4 and column 4, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Sensitivity",
+    "prediction": "BoLD Categorical Emotions by Valence & Dominance",
+    "latency": 2.5529886000149418,
+    "task": "descriptive",
+    "figure_id": "159",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "159_2",
+    "question": "For the subplot at row 4 and column 4, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Dominance",
+    "prediction": "Dominance",
+    "latency": 2.216370399983134,
+    "task": "descriptive",
+    "figure_id": "159",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "159_3",
+    "question": "For the subplot at row 4 and column 4, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 2.201208799990127,
+    "task": "descriptive",
+    "figure_id": "159",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "160_0",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "1 by 1",
+    "prediction": "1 by 1",
+    "latency": 0.4254494000051636,
+    "task": "descriptive",
+    "figure_id": "160",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "160_1",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Bprop. FLOPs per iter.",
+    "prediction": "Bprop. FLOPs per iter",
+    "latency": 1.8821963999944273,
+    "task": "descriptive",
+    "figure_id": "160",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "160_2",
+    "question": "For the current plot, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "1.4",
+    "prediction": "1.4",
+    "latency": 0.38778789999196306,
+    "task": "descriptive",
+    "figure_id": "160",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0.0, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.4",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "160_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 1.6805596000049263,
+    "task": "descriptive",
+    "figure_id": "160",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "173_0",
+    "question": "For the subplot at row 1 and column 2, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "25",
+    "prediction": "25",
+    "latency": 120.18196750001516,
+    "task": "descriptive",
+    "figure_id": "173",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "173_1",
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "yes",
+    "prediction": "No",
+    "latency": 118.43023320002249,
+    "task": "descriptive",
+    "figure_id": "173",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "173_2",
+    "question": "For the subplot at row 1 and column 2, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "LLC (Ways)",
+    "prediction": "MBW (%)",
+    "latency": 117.66239540002425,
+    "task": "descriptive",
+    "figure_id": "173",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "173_3",
+    "question": "For the subplot at row 1 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "8.0",
+    "latency": 118.9837344000116,
+    "task": "descriptive",
+    "figure_id": "173",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "181_0",
+    "question": "For the subplot at row 1 and column 3, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "answer": "Objectness Threshold",
+    "prediction": "Objectness Threshold",
+    "latency": 1.1971701000002213,
+    "task": "descriptive",
+    "figure_id": "181",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "181_1",
+    "question": "For the subplot at row 1 and column 3, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "GDIP-Yolo, IA-Yolo",
+    "prediction": "GDIP-Yolo, IA-Yolo",
+    "latency": 1.3708351999812294,
+    "task": "descriptive",
+    "figure_id": "181",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "181_2",
+    "question": "For the subplot at row 1 and column 3, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0.9",
+    "prediction": "0.9",
+    "latency": 0.29405830000177957,
+    "task": "descriptive",
+    "figure_id": "181",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "181_3",
+    "question": "For the subplot at row 1 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "25000",
+    "latency": 1.2858033000084106,
+    "task": "descriptive",
+    "figure_id": "181",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "183_0",
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "14",
+    "prediction": "14",
+    "latency": 0.30307320001884364,
+    "task": "descriptive",
+    "figure_id": "183",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked total tick count",
+      "suggested_answer": "14",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "183_1",
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "0.000",
+    "prediction": "0.000",
+    "latency": 0.39293800000450574,
+    "task": "descriptive",
+    "figure_id": "183",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0.000, 0.002, 0.004, 0.006, 0.008, 0.010",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "183_2",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "Frequency",
+    "prediction": "Frequency",
+    "latency": 0.43187110000872053,
+    "task": "descriptive",
+    "figure_id": "183",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "183_3",
+    "question": "For the current plot, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "No",
+    "latency": 0.4299324000021443,
+    "task": "descriptive",
+    "figure_id": "183",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "195_0",
+    "question": "For the subplot at row 2 and column 6, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "w/o LBGM, w/ LBGM",
+    "prediction": "w/o LBGM, w/ LBGM",
+    "latency": 0.7088193999952637,
+    "task": "descriptive",
+    "figure_id": "195",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "195_1",
+    "question": "For the subplot at row 2 and column 6, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "#params shared (x10^6)",
+    "prediction": "#params shared(×10⁶)",
+    "latency": 0.721550100017339,
+    "task": "descriptive",
+    "figure_id": "195",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "195_2",
+    "question": "For the subplot at row 2 and column 6, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "1",
+    "prediction": "0.25",
+    "latency": 0.5506976000033319,
+    "task": "descriptive",
+    "figure_id": "195",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "195_3",
+    "question": "For the subplot at row 2 and column 6, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "100",
+    "latency": 0.49670980000519194,
+    "task": "descriptive",
+    "figure_id": "195",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "210_0",
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "17",
+    "prediction": "17",
+    "latency": 0.31396090000635013,
+    "task": "descriptive",
+    "figure_id": "210",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked total tick count",
+      "suggested_answer": "17",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "210_1",
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Random Chance, Removing Random Objects, Removing Most Gendered Objects, Removing Least Gendered Objects",
+    "prediction": "Random Chance, Removing Random Objects, Removing Most Gendered Objects, Removing Least Gendered Objects",
+    "latency": 1.872842499986291,
+    "task": "descriptive",
+    "figure_id": "210",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "210_2",
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "answer": "AUC",
+    "prediction": "AUC",
+    "latency": 1.3677255999937188,
+    "task": "descriptive",
+    "figure_id": "210",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "210_3",
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "Not Applicable",
+    "prediction": "Not Applicable",
+    "latency": 1.3959155000047758,
+    "task": "descriptive",
+    "figure_id": "210",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "212_0",
+    "question": "For the subplot at row 1 and column 1, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "Anaesthesia",
+    "prediction": "Anesthesia",
+    "latency": 0.19079739999142475,
+    "task": "descriptive",
+    "figure_id": "212",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence for requested axis",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "212_1",
+    "question": "For the subplot at row 1 and column 1, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "answer": "26",
+    "prediction": "10",
+    "latency": 0.17233349999878556,
+    "task": "descriptive",
+    "figure_id": "212",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no tick evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "212_2",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "2 by 1",
+    "prediction": "1 by 1",
+    "latency": 0.23784970000269823,
+    "task": "descriptive",
+    "figure_id": "212",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked subplot layout/count",
+      "suggested_answer": "1 by 1",
+      "confidence": 0.8
+    }
+  },
+  {
+    "query_id": "212_3",
+    "question": "For the subplot at row 1 and column 1, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "1000",
+    "latency": 0.5387025999953039,
+    "task": "descriptive",
+    "figure_id": "212",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  }
+]

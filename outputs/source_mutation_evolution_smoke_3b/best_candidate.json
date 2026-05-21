@@ -1,0 +1,22 @@
+{
+  "candidate_id": "g00_c001",
+  "parent_id": null,
+  "model_name": "Qwen/Qwen2.5-Coder-3B-Instruct",
+  "patch_path": "outputs\\source_mutation_evolution_smoke_3b\\patches\\g00_c001.patch",
+  "status": "rejected",
+  "compile_ok": false,
+  "smoke_ok": false,
+  "metrics": {
+    "wall_time": 40.73828709998634
+  },
+  "behavior": {
+    "accuracy_bin": "low",
+    "latency_bin": "fast",
+    "abstention_bin": "low",
+    "invalid_bin": "clean",
+    "patch_size_bin": "small"
+  },
+  "patch_lines": 6,
+  "error": "error: corrupt patch at line 9",
+  "score": -1.0
+}

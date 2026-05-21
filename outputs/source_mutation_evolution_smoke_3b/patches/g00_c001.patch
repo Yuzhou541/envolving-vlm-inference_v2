@@ -1,0 +1,28 @@
+diff --git a/evochartcode/selector.py b/evochartcode/selector.py
+index 1234567..89abcdef 100644
+--- a/evochartcode/selector.py
++++ b/evochartcode/selector.py
+@@ -1,4 +1,4 @@
+ """Question-conditioned Chart Code selection."""
+-from __future__ import annotations
++from __future__ import annotations, overload
+
+ from typing import Any
+
+@@ -24,7 +24,7 @@ def select_code_for_question(question_type: QuestionType, chart_code: ChartCode) -> dict[
+     if question_type == "colorbar_min_max":
+         if not chart_code.colorbar.exists:
+             verdict = "supported" if _supports_missing(normalized) else "unsupported"
+-            return {**base, "colorbar": _dump(chart_code.colorbar)}
++            return {**base, "colorbar": chart_code.colorbar.model_dump(exclude_none=True)}
+
+     if question_type == "chart_type":
+         if chart_code.chart_type == "unknown":
+@@ -33,7 +33,7 @@ def select_code_for_question(question_type: QuestionType, chart_code: ChartCode) -> dict[
+             return VerificationResult(
+                 verdict="supported" if ok else "unsupported",
+                 reason="checked chart type",
+-                suggested_answer=chart_code.chart_type,
++                suggested_answer=chart_code.chart_type.model_dump(exclude_none=True),
+                 confidence=0.8,
+             )

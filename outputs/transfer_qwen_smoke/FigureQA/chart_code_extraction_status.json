@@ -1,0 +1,9 @@
+{
+  "dataset": "FigureQA",
+  "status": "complete",
+  "requested_images": 2,
+  "completed_images": 2,
+  "failed_images": 0,
+  "failures": [],
+  "cache": "data\\cache\\chart_codes\\transfer_qwen_smoke\\FigureQA"
+}

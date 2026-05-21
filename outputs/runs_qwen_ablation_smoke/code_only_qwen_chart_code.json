@@ -1,0 +1,19 @@
+{
+  "num_examples": 8,
+  "exact_match": 0.375,
+  "relaxed_numeric": 0.5,
+  "invalid_rate": 0.0,
+  "na_precision": 0.4,
+  "na_recall": 1.0,
+  "na_f1": 0.5714285714285715,
+  "mean_latency": 0.000539849996130215,
+  "p95_latency": 0.0006316000071819872,
+  "method": "code_only_qwen_chart_code",
+  "split": "validation",
+  "policy": {
+    "verifier": {
+      "min_confidence": 0.4
+    }
+  },
+  "base_method": "code_only"
+}

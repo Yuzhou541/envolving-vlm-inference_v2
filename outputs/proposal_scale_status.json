@@ -1,0 +1,105 @@
+{
+  "proposal_scale_pipeline": {
+    "status": "implemented",
+    "scripts": [
+      "scripts/materialize_full_transfer.py",
+      "scripts/extract_transfer_chart_codes.py",
+      "scripts/run_transfer_qwen_full.py",
+      "scripts/run_qwen_multiseed.py",
+      "scripts/run_qwen_ablation_suite.py",
+      "scripts/run_source_mutation_evolution.py",
+      "scripts/build_neurips_paper.py",
+      "reproduce_proposal_scale.sh"
+    ]
+  },
+  "preflight": {
+    "cuda": true,
+    "gpu": "NVIDIA GeForce RTX 4090 Laptop GPU",
+    "qwen_vl_cached": true,
+    "qwen_coder_7b_cached": true,
+    "qwen_coder_3b_cached": true,
+    "disk_free_bytes_observed": 1174219165696
+  },
+  "full_transfer_manifests": {
+    "ChartQA": {
+      "status": "ready",
+      "hf_id": "HuggingFaceM4/ChartQA",
+      "split": "test",
+      "rows_seen": 2500,
+      "num_examples": 2500,
+      "num_shards": 3
+    },
+    "PlotQA": {
+      "status": "ready",
+      "hf_id": "jinaai/plotqa",
+      "split": "test",
+      "rows_seen": 1000,
+      "num_examples": 1000,
+      "num_shards": 2
+    },
+    "DVQA": {
+      "status": "ready",
+      "hf_id": "sionic-ai/dvqa",
+      "split": "train",
+      "expected_rows": 200000,
+      "rows_seen": 200000,
+      "num_images": 200000,
+      "num_examples": 2325316,
+      "num_shards": 2326
+    },
+    "FigureQA": {
+      "status": "ready",
+      "hf_id": "sionic-ai/figureqa",
+      "split": "train",
+      "expected_rows": 100000,
+      "rows_seen": 100000,
+      "num_images": 100000,
+      "num_examples": 1327368,
+      "num_shards": 1328
+    }
+  },
+  "qwen_transfer_smoke": {
+    "status": "completed_partial_smoke",
+    "examples_per_dataset": 2,
+    "output_root": "outputs/transfer_qwen_smoke",
+    "cache_root": "data/cache/chart_codes/transfer_qwen_smoke"
+  },
+  "qwen_ablation_smoke": {
+    "status": "completed",
+    "limit": 8,
+    "num_ablations": 8,
+    "output_dir": "outputs/runs_qwen_ablation_smoke"
+  },
+  "qwen_multiseed_smoke": {
+    "status": "completed",
+    "seeds": [
+      0,
+      1
+    ],
+    "limit": 2,
+    "output_dir": "outputs/analysis/qwen_multiseed_smoke"
+  },
+  "source_mutation_smoke": {
+    "status": "completed_with_promoted_candidate",
+    "model_attempts": [
+      "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "Qwen/Qwen2.5-Coder-3B-Instruct"
+    ],
+    "accepted_candidates": 1,
+    "promoted_candidate": "outputs/source_mutation_evolution/promoted_candidate.json",
+    "output_dirs": [
+      "outputs/source_mutation_evolution_smoke",
+      "outputs/source_mutation_evolution_smoke_3b",
+      "outputs/source_mutation_evolution"
+    ]
+  },
+  "neurips_paper": {
+    "status": "compiled",
+    "tex": "paper/neurips/main.tex",
+    "pdf": "paper/neurips/main.pdf"
+  },
+  "full_gpu_jobs": {
+    "status": "not_completed_in_current_turn",
+    "reason": "Full transfer Qwen evaluation, five-seed Qwen evaluation, and full Qwen ablations are days-to-months-scale checkpointed GPU jobs at the completed manifest sizes. The runners are implemented and smoke-tested; completed final-paper claims must wait for those jobs to finish."
+  }
+}

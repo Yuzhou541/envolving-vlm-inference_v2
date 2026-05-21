@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "PlotQA_00000000_0",
+    "question": "Across all years, what is the minimum percentage of repeaters in Malawi ?",
+    "answer": "12.44494",
+    "prediction": "10.0",
+    "latency": 9.394925200002035,
+    "task": "PlotQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "no extrema evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "PlotQA_00000001_0",
+    "question": "Across all years, what is the maximum pupil-teacher ratio in secondary education in Turkey ?",
+    "answer": "24.04789",
+    "prediction": "24.3",
+    "latency": 0.4513376999821048,
+    "task": "PlotQA",
+    "figure_id": "00000001",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "insufficient numeric series evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  }
+]

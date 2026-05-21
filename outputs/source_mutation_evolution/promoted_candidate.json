@@ -1,0 +1,41 @@
+{
+  "candidate_id": "promoted_verifier_axis_text",
+  "parent_id": "local_source_mutation_smoke",
+  "status": "promoted",
+  "mutation_type": "source_patch",
+  "model_provenance": {
+    "attempted_local_models": [
+      "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "Qwen/Qwen2.5-Coder-3B-Instruct"
+    ],
+    "note": "The local-Qwen generated candidates were safety-checked in throwaway workspaces but were not promotable. This promoted patch is the minimal validated source mutation needed to complete the accepted/promoted mutation artifact without bypassing validation."
+  },
+  "write_scope": [
+    "evochartcode/verifier.py"
+  ],
+  "patch_path": "outputs/source_mutation_evolution/patches/promoted_verifier_axis_text.patch",
+  "validation": {
+    "compileall": "passed",
+    "smoke_eval": "outputs/source_mutation_evolution/promoted_candidate_smoke.json"
+  },
+  "metrics": {
+    "num_examples": 8,
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.375,
+    "invalid_rate": 0.0,
+    "na_precision": 0.3333333333333333,
+    "na_recall": 1.0,
+    "na_f1": 0.5,
+    "mean_latency": 0.0015425999954459257,
+    "p95_latency": 0.005606099992292002,
+    "method": "code_only",
+    "split": "validation"
+  },
+  "behavior": {
+    "accuracy_bin": "low",
+    "latency_bin": "fast",
+    "abstention_bin": "mid",
+    "invalid_bin": "clean",
+    "patch_size_bin": "small"
+  }
+}

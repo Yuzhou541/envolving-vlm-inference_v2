@@ -1,0 +1,82 @@
+[
+  {
+    "query_id": "0_0",
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "60",
+    "prediction": "The y-axis label is \"Overall Acc. (%)\" and the tick marks are labeled with values. The highest tick value on the y-axis is 60. This is the topmost tick on the y-axis in the subplot at row 1 and column 2.\n\nThe spatially highest labeled tick on the y-axis is 60.",
+    "latency": 5.517890900024213,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": null
+  },
+  {
+    "query_id": "0_1",
+    "question": "For the subplot at row 1 and column 2, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "prediction": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "latency": 1.1516671999997925,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": null
+  },
+  {
+    "query_id": "0_2",
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "answer": "Yes",
+    "prediction": "Yes",
+    "latency": 0.17475499998545274,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": null
+  },
+  {
+    "query_id": "0_3",
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "60",
+    "latency": 0.2065697999787517,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": null
+  },
+  {
+    "query_id": "3_0",
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "answer": "1 by 2",
+    "prediction": "2 by 1",
+    "latency": 0.27068610000424087,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": null
+  },
+  {
+    "query_id": "3_1",
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "answer": "(b) OPT",
+    "prediction": "(b) OPT",
+    "latency": 0.2339170000050217,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": null
+  },
+  {
+    "query_id": "3_2",
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "answer": "2",
+    "prediction": "The image contains two separate 3D plots, each with its own title and labels. These are labeled as (a) Standard training and (b) OPT. Each of these is a distinct subplot.\n\nTherefore, the total number of subplots is 2.\n\n2",
+    "latency": 1.916806599998381,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": null
+  },
+  {
+    "query_id": "3_3",
+    "question": "For the subplot at row 1 and column 2, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Not Applicable",
+    "prediction": "The subplot at row 1 and column 2 is labeled (b) OPT. This subplot shows a 3D surface plot with a color gradient, and the legend is located on the right side of the plot. The legend contains the following labels:\n\n- Red: 0.8\n- Orange: 0.7\n- Yellow: 0.6\n- Light blue: 0.5\n- Dark blue: 0.4\n- Purple: 0.3\n- Green: 0.2\n- Cyan: 0.1\n- White: 0.0\n\nThere are ",
+    "latency": 4.413093799987109,
+    "task": "descriptive",
+    "figure_id": "3",
+    "verifier": null
+  }
+]

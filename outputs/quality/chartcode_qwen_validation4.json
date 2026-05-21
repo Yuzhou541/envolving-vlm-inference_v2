@@ -1,0 +1,63 @@
+{
+  "benchmark": "ChartCode-300",
+  "split": "validation",
+  "num_charts": 4,
+  "mean_quality_score": 0.830952380952381,
+  "chart_type_accuracy": 0.5,
+  "legend_exists_accuracy": 0.5,
+  "colorbar_exists_accuracy": 1.0,
+  "image_size_valid_rate": 1.0,
+  "plot_area_present_rate": 1.0,
+  "axis_evidence_present_rate": 1.0,
+  "series_or_mark_present_rate": 0.75,
+  "records": [
+    {
+      "chart_id": "0",
+      "chart_type_correct": true,
+      "image_size_valid": true,
+      "plot_area_present": true,
+      "legend_exists_correct": false,
+      "colorbar_exists_correct": true,
+      "axis_evidence_present": true,
+      "series_or_mark_present": true,
+      "global_confidence": 0.0,
+      "quality_score": 0.8571428571428571
+    },
+    {
+      "chart_id": "3",
+      "chart_type_correct": false,
+      "image_size_valid": true,
+      "plot_area_present": true,
+      "legend_exists_correct": true,
+      "colorbar_exists_correct": null,
+      "axis_evidence_present": true,
+      "series_or_mark_present": true,
+      "global_confidence": 0.0,
+      "quality_score": 0.8333333333333334
+    },
+    {
+      "chart_id": "5",
+      "chart_type_correct": false,
+      "image_size_valid": true,
+      "plot_area_present": true,
+      "legend_exists_correct": null,
+      "colorbar_exists_correct": null,
+      "axis_evidence_present": true,
+      "series_or_mark_present": true,
+      "global_confidence": 0.0,
+      "quality_score": 0.8
+    },
+    {
+      "chart_id": "7",
+      "chart_type_correct": true,
+      "image_size_valid": true,
+      "plot_area_present": true,
+      "legend_exists_correct": null,
+      "colorbar_exists_correct": true,
+      "axis_evidence_present": true,
+      "series_or_mark_present": false,
+      "global_confidence": 0.0,
+      "quality_score": 0.8333333333333334
+    }
+  ]
+}

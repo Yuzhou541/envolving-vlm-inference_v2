@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "ChartQA_00000000_0",
+    "question": "How many food item is shown in the bar graph?",
+    "answer": "14",
+    "prediction": "14",
+    "latency": 9.297987700003432,
+    "task": "ChartQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "unsupported",
+      "reason": "checked numeric mark/point value",
+      "suggested_answer": null,
+      "confidence": 0.7
+    }
+  },
+  {
+    "query_id": "ChartQA_00000001_0",
+    "question": "What is the difference in value between Lamb and Corn?",
+    "answer": "0.57",
+    "prediction": "7.83",
+    "latency": 0.3905683000048157,
+    "task": "ChartQA",
+    "figure_id": "00000001",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "insufficient numeric series evidence",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  }
+]

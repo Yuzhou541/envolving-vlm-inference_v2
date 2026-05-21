@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "0_0",
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "60",
+    "prediction": "60",
+    "latency": 9.115271699993173,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 10, 20, 30, 40, 50, 60",
+      "confidence": 0.75
+    }
+  },
+  {
+    "query_id": "0_1",
+    "question": "For the subplot at row 1 and column 2, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "answer": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "prediction": "Ft-CNN, iCaRL*, EEIL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "latency": 3.0616498999879695,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "explicit Not Applicable question route",
+      "suggested_answer": "Not Applicable",
+      "confidence": 0.7
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "qwen_backed_extraction": {
+    "status": "validation128_completed",
+    "cache": "data/cache/chart_codes/charxiv_qwen_vl",
+    "note": "Thirty-two validation charts covering 128 descriptive queries were extracted and schema-repaired using cached Qwen/Qwen3-VL-2B-Instruct."
+  },
+  "full_evochartcode_gpu_evaluation": {
+    "status": "validation128_completed",
+    "metrics": "outputs/runs/qwen_full_evochartcode_validation128.json",
+    "note": "One hundred twenty-eight validation queries completed with image+code reasoning on CUDA."
+  },
+  "transfer_datasets": {
+    "status": "hf_sample_completed",
+    "manifests": "data/transfer_manifests",
+    "results": "outputs/transfer",
+    "note": "Public Hugging Face samples were materialized for ChartQA, PlotQA, DVQA, and FigureQA."
+  },
+  "chartcode_300": {
+    "status": "completed_metadata_backend_plus_qwen_sample",
+    "metrics": "outputs/quality/chartcode_300.json",
+    "qwen_sample_metrics": "outputs/quality/chartcode_qwen_validation32.json"
+  },
+  "multi_seed_bootstrap_pareto": {
+    "status": "completed_metadata_backend",
+    "metrics": "outputs/analysis/multiseed_code_only.json",
+    "analysis": "outputs/analysis/run_analysis.json"
+  },
+  "paper_pdf": {
+    "status": "completed",
+    "path": "paper/evochartcode_report.pdf"
+  },
+  "proposal_scale_pipeline": {
+    "status": "implemented_manifest_complete_and_smoke_tested",
+    "status_file": "outputs/proposal_scale_status.json",
+    "paper_pdf": "paper/neurips/main.pdf",
+    "note": "Full ChartQA, PlotQA, DVQA, and FigureQA manifests are materialized. Qwen transfer, Qwen ablation, and Qwen multi-seed runners are implemented and smoke-tested. A validated source mutation candidate was promoted. Full Qwen evaluation jobs are checkpointed but not completed in this output set."
+  }
+}

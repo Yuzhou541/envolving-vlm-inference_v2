@@ -1,0 +1,32 @@
+[
+  {
+    "query_id": "DVQA_00000000_0",
+    "question": "Which bar has the largest value?",
+    "answer": "Soil.",
+    "prediction": "soil",
+    "latency": 9.14116220001597,
+    "task": "DVQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "answer has no numeric value",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  },
+  {
+    "query_id": "DVQA_00000000_1",
+    "question": "Which bar has the smallest value?",
+    "answer": "Essay.",
+    "prediction": "essay",
+    "latency": 0.11019919998943806,
+    "task": "DVQA",
+    "figure_id": "00000000",
+    "verifier": {
+      "verdict": "ambiguous",
+      "reason": "answer has no numeric value",
+      "suggested_answer": null,
+      "confidence": 0.4
+    }
+  }
+]

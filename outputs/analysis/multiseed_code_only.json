@@ -1,0 +1,96 @@
+{
+  "method": "code_only",
+  "split": "validation",
+  "limit": 128,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "exact_match_ci": {
+    "mean": 0.25,
+    "low": 0.25,
+    "high": 0.25,
+    "samples": 3
+  },
+  "relaxed_numeric_ci": {
+    "mean": 0.28125,
+    "low": 0.28125,
+    "high": 0.28125,
+    "samples": 3
+  },
+  "na_f1_ci": {
+    "mean": 0.4266666666666667,
+    "low": 0.4266666666666667,
+    "high": 0.4266666666666667,
+    "samples": 3
+  },
+  "mean_latency_ci": {
+    "mean": 0.0002819085932893965,
+    "low": 0.00028022187473197846,
+    "high": 0.00028527499921437993,
+    "samples": 3
+  },
+  "runs": [
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.00028527499921437993,
+      "p95_latency": 0.0003256999916629866,
+      "method": "code_only",
+      "split": "validation",
+      "policy": {
+        "seed": 0,
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "seed": 0
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.00028022187473197846,
+      "p95_latency": 0.0003282999969087541,
+      "method": "code_only",
+      "split": "validation",
+      "policy": {
+        "seed": 1,
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "seed": 1
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.00028022890592183103,
+      "p95_latency": 0.0003104999923380092,
+      "method": "code_only",
+      "split": "validation",
+      "policy": {
+        "seed": 2,
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "seed": 2
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "candidate_id": "g00_c001",
+  "parent_id": "seed",
+  "policy": {
+    "schema": {
+      "optional_fields": [
+        "uncertainty",
+        "provenance"
+      ]
+    },
+    "extractor": {
+      "prompt_style": "strict_json",
+      "include_uncertainty": true
+    },
+    "selector": {
+      "max_serialized_chars": 4096,
+      "include_provenance": false
+    },
+    "reasoner": {
+      "mode": "code_only",
+      "max_answer_tokens": 112
+    },
+    "verifier": {
+      "min_confidence": 0.4,
+      "numeric_rel_tol": 0.05,
+      "rules": [
+        "legend",
+        "colorbar",
+        "trend"
+      ]
+    }
+  },
+  "metrics": {
+    "exact_match": 0.265625,
+    "relaxed_numeric": 0.34375,
+    "na_f1": 0.4383561643835616,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0002781468751891225,
+    "score": 0.26561109265624055
+  },
+  "behavior": {
+    "accuracy_bin": "low",
+    "latency_bin": "fast",
+    "abstention_bin": "mid"
+  },
+  "mutation_summary": "Mutated reasoner.max_answer_tokens."
+}

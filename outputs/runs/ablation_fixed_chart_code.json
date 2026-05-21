@@ -1,0 +1,18 @@
+{
+  "num_examples": 128,
+  "exact_match": 0.25,
+  "relaxed_numeric": 0.28125,
+  "invalid_rate": 0.0,
+  "na_precision": 0.2711864406779661,
+  "na_recall": 1.0,
+  "na_f1": 0.4266666666666667,
+  "mean_latency": 0.0002748671865901997,
+  "p95_latency": 0.0003100000030826777,
+  "method": "ablation_fixed_chart_code",
+  "split": "validation",
+  "policy": {
+    "verifier": {
+      "min_confidence": 0.4
+    }
+  }
+}

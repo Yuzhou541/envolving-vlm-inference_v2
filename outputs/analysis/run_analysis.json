@@ -1,0 +1,244 @@
+{
+  "num_runs": 9,
+  "exact_match_ci": {
+    "mean": 0.4201388888888889,
+    "low": 0.25,
+    "high": 0.6111111111111112,
+    "samples": 9
+  },
+  "relaxed_numeric_ci": {
+    "mean": 0.453125,
+    "low": 0.28125,
+    "high": 0.6336805555555556,
+    "samples": 9
+  },
+  "na_f1_ci": {
+    "mean": 0.42412698412698413,
+    "low": 0.2814814814814815,
+    "high": 0.5227513227513227,
+    "samples": 9
+  },
+  "pareto_frontier": [
+    {
+      "num_examples": 1,
+      "exact_match": 1.0,
+      "relaxed_numeric": 1.0,
+      "invalid_rate": 0.0,
+      "na_precision": 0.0,
+      "na_recall": 0.0,
+      "na_f1": 0.0,
+      "mean_latency": 9.764127499991446,
+      "p95_latency": 9.764127499991446,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\qwen_full_evochartcode_smoke.json"
+    },
+    {
+      "num_examples": 16,
+      "exact_match": 0.75,
+      "relaxed_numeric": 0.8125,
+      "invalid_rate": 0.0,
+      "na_precision": 1.0,
+      "na_recall": 0.75,
+      "na_f1": 0.8571428571428571,
+      "mean_latency": 1.5482290812524298,
+      "p95_latency": 3.0678655999945477,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\qwen_full_evochartcode_validation16.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0002748671865901997,
+      "p95_latency": 0.0003100000030826777,
+      "method": "ablation_fixed_chart_code",
+      "split": "validation",
+      "policy": {
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "path": "outputs\\runs\\ablation_fixed_chart_code.json"
+    }
+  ],
+  "runs": [
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0002748671865901997,
+      "p95_latency": 0.0003100000030826777,
+      "method": "ablation_fixed_chart_code",
+      "split": "validation",
+      "policy": {
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "path": "outputs\\runs\\ablation_fixed_chart_code.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.00027627578128885943,
+      "p95_latency": 0.00030300000798888505,
+      "method": "full_evochartcode_metadata",
+      "split": "validation",
+      "policy": {
+        "schema": {
+          "optional_fields": [
+            "uncertainty",
+            "provenance"
+          ]
+        },
+        "selector": {
+          "max_serialized_chars": 4096
+        },
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "path": "outputs\\runs\\ablation_full_evochartcode.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0002838140622998253,
+      "p95_latency": 0.0003440000000409782,
+      "method": "ablation_no_derived_relations",
+      "split": "validation",
+      "policy": {
+        "selector": {
+          "extra_blocks": []
+        },
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "path": "outputs\\runs\\ablation_no_derived_relations.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0002767195314845594,
+      "p95_latency": 0.0003127999952994287,
+      "method": "ablation_no_uncertainty",
+      "split": "validation",
+      "policy": {
+        "selector": {
+          "extra_blocks": []
+        },
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "path": "outputs\\runs\\ablation_no_uncertainty.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0002757375009423413,
+      "p95_latency": 0.00031459999445360154,
+      "method": "ablation_no_verifier",
+      "split": "validation",
+      "policy": {
+        "verifier": {
+          "min_confidence": 0.0
+        }
+      },
+      "path": "outputs\\runs\\ablation_no_verifier.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.25,
+      "relaxed_numeric": 0.28125,
+      "invalid_rate": 0.0,
+      "na_precision": 0.2711864406779661,
+      "na_recall": 1.0,
+      "na_f1": 0.4266666666666667,
+      "mean_latency": 0.0006176242184210423,
+      "p95_latency": 0.0008824999968055636,
+      "method": "code_only",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\code_only_validation.json"
+    },
+    {
+      "num_examples": 1,
+      "exact_match": 1.0,
+      "relaxed_numeric": 1.0,
+      "invalid_rate": 0.0,
+      "na_precision": 0.0,
+      "na_recall": 0.0,
+      "na_f1": 0.0,
+      "mean_latency": 9.764127499991446,
+      "p95_latency": 9.764127499991446,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\qwen_full_evochartcode_smoke.json"
+    },
+    {
+      "num_examples": 128,
+      "exact_match": 0.53125,
+      "relaxed_numeric": 0.578125,
+      "invalid_rate": 0.0,
+      "na_precision": 1.0,
+      "na_recall": 0.25,
+      "na_f1": 0.4,
+      "mean_latency": 13.281345264844276,
+      "p95_latency": 16.102237699989928,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\qwen_full_evochartcode_validation128.json"
+    },
+    {
+      "num_examples": 16,
+      "exact_match": 0.75,
+      "relaxed_numeric": 0.8125,
+      "invalid_rate": 0.0,
+      "na_precision": 1.0,
+      "na_recall": 0.75,
+      "na_f1": 0.8571428571428571,
+      "mean_latency": 1.5482290812524298,
+      "p95_latency": 3.0678655999945477,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {},
+      "path": "outputs\\runs\\qwen_full_evochartcode_validation16.json"
+    }
+  ]
+}

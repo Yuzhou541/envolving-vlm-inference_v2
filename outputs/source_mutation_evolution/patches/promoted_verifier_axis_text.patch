@@ -1,0 +1,22 @@
+*** Begin Patch
+*** Update File: evochartcode/verifier.py
+@@
+ def _contains_text(answer: str, expected: str | None) -> bool:
+     if not expected:
+         return False
+-    return expected.strip().lower() in answer.strip().lower()
++    normalized_answer = normalize_answer(answer).lower()
++    normalized_expected = normalize_answer(expected).lower()
++    return normalized_expected in normalized_answer or normalized_answer in normalized_expected
+ 
+ 
+ def _axis_name(question: str) -> str | None:
+     q = question.lower()
+-    if "x-axis" in q or "x axis" in q:
++    if "x-axis" in q or "x axis" in q or "horizontal" in q or "bottom axis" in q:
+         return "x"
+-    if "y-axis" in q or "y axis" in q:
++    if "y-axis" in q or "y axis" in q or "vertical" in q or "left axis" in q:
+         return "y"
+     return None
+*** End Patch

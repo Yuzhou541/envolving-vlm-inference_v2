@@ -1,0 +1,22 @@
+{
+  "num_examples": 8,
+  "exact_match": 0.625,
+  "relaxed_numeric": 0.75,
+  "invalid_rate": 0.0,
+  "na_precision": 1.0,
+  "na_recall": 0.5,
+  "na_f1": 0.6666666666666666,
+  "mean_latency": 1.6596098499976506,
+  "p95_latency": 3.3070921000035014,
+  "method": "no_uncertainty",
+  "split": "validation",
+  "policy": {
+    "selector": {
+      "extra_blocks": []
+    },
+    "verifier": {
+      "min_confidence": 0.4
+    }
+  },
+  "base_method": "full_evochartcode"
+}

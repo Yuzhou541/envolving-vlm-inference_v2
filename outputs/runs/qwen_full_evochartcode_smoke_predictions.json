@@ -1,0 +1,17 @@
+[
+  {
+    "query_id": "0_0",
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "answer": "60",
+    "prediction": "60",
+    "latency": 9.764127499991446,
+    "task": "descriptive",
+    "figure_id": "0",
+    "verifier": {
+      "verdict": "supported",
+      "reason": "checked tick value against Chart Code ticks",
+      "suggested_answer": "0, 10, 20, 30, 40, 50, 60",
+      "confidence": 0.75
+    }
+  }
+]

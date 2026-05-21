@@ -1,0 +1,95 @@
+{
+  "method": "full_evochartcode",
+  "split": "validation",
+  "limit": 2,
+  "seeds": [
+    0,
+    1
+  ],
+  "num_seed_runs": 2,
+  "per_seed": [
+    {
+      "num_examples": 2,
+      "exact_match": 1.0,
+      "relaxed_numeric": 1.0,
+      "invalid_rate": 0.0,
+      "na_precision": 0.0,
+      "na_recall": 0.0,
+      "na_f1": 0.0,
+      "mean_latency": 6.088460799990571,
+      "p95_latency": 9.115271699993173,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {
+        "seed": 0,
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "seed": 0
+    },
+    {
+      "num_examples": 2,
+      "exact_match": 1.0,
+      "relaxed_numeric": 1.0,
+      "invalid_rate": 0.0,
+      "na_precision": 0.0,
+      "na_recall": 0.0,
+      "na_f1": 0.0,
+      "mean_latency": 3.1762114000157453,
+      "p95_latency": 3.249559700023383,
+      "method": "full_evochartcode",
+      "split": "validation",
+      "policy": {
+        "seed": 1,
+        "verifier": {
+          "min_confidence": 0.4
+        }
+      },
+      "seed": 1
+    }
+  ],
+  "pooled_metrics": {
+    "num_examples": 4,
+    "exact_match": 1.0,
+    "relaxed_numeric": 1.0,
+    "invalid_rate": 0.0,
+    "na_precision": 0.0,
+    "na_recall": 0.0,
+    "na_f1": 0.0,
+    "mean_latency": 4.632336100003158,
+    "p95_latency": 9.115271699993173
+  },
+  "bootstrap": {
+    "exact_match_ci": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "samples": 4
+    },
+    "relaxed_numeric_ci": {
+      "mean": 1.0,
+      "low": 1.0,
+      "high": 1.0,
+      "samples": 4
+    },
+    "invalid_rate_ci": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "samples": 4
+    },
+    "na_prediction_rate_ci": {
+      "mean": 0.0,
+      "low": 0.0,
+      "high": 0.0,
+      "samples": 4
+    },
+    "mean_latency_ci": {
+      "mean": 4.632336100003158,
+      "low": 3.0822564999980386,
+      "high": 7.612169549996906,
+      "samples": 4
+    }
+  }
+}

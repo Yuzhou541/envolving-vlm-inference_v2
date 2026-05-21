@@ -1,0 +1,27 @@
+{
+  "num_examples": 128,
+  "exact_match": 0.25,
+  "relaxed_numeric": 0.28125,
+  "invalid_rate": 0.0,
+  "na_precision": 0.2711864406779661,
+  "na_recall": 1.0,
+  "na_f1": 0.4266666666666667,
+  "mean_latency": 0.00027627578128885943,
+  "p95_latency": 0.00030300000798888505,
+  "method": "full_evochartcode_metadata",
+  "split": "validation",
+  "policy": {
+    "schema": {
+      "optional_fields": [
+        "uncertainty",
+        "provenance"
+      ]
+    },
+    "selector": {
+      "max_serialized_chars": 4096
+    },
+    "verifier": {
+      "min_confidence": 0.4
+    }
+  }
+}
