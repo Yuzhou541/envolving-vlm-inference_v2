@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.6328125,
+  "num_evaluated": 128,
+  "num_errors": 0,
+  "total_time": 48.84440588951111,
+  "avg_time_per_query": 0.38159692101180553,
+  "aliased_from": "manual_instruct"
+}

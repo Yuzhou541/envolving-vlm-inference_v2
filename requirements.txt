@@ -1,0 +1,15 @@
+transformers==4.57.1
+qwen-vl-utils
+torch>=2.0.0
+torchvision
+pillow
+accelerate
+pydantic>=2.8
+pyyaml>=6.0
+opencv-python>=4.9
+numpy>=1.24
+scipy
+scikit-image
+rapidfuzz
+jsonschema
+reportlab

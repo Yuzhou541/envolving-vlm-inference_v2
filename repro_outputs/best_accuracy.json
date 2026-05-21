@@ -1,0 +1,8 @@
+{
+  "accuracy": 0.6640625,
+  "num_evaluated": 128,
+  "num_errors": 0,
+  "total_time": 49.46804451942444,
+  "avg_time_per_query": 0.3864690978080034,
+  "aliased_from": "evolved_instruct"
+}

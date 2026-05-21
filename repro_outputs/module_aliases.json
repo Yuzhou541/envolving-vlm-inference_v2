@@ -1,0 +1,29 @@
+{
+  "aliases": {
+    "starting_scripts": "starting_scripts",
+    "manual_instruct": "manual_instruct",
+    "manual_thinking": "manual_thinking",
+    "evolved_instruct": "evolved_instruct",
+    "evolved_thinking": "evolved_thinking",
+    "best_accuracy": "evolved_instruct",
+    "best_speed": "manual_instruct",
+    "best_overall": "evolved_instruct"
+  },
+  "file_hashes": {
+    "starting_scripts": "02795e8ce7840e1794fcc6611f17c67c6f9c2c64c232bb96ae9c1621896fb45f",
+    "manual_instruct": "b6ccd39befed3a5960b44cd982f7988a300fd9ac5ca318a537d8471c3c6a21ea",
+    "manual_thinking": "d86b3e91c8533b3e13c27a1e6677c24ca2e5248b3d40223e44cda3532ace3f09",
+    "evolved_instruct": "b1ab9a7964b1d3b24f2a4dc906c4930cf8a5fabd4db8f40f9bc62f4f089f13d0",
+    "evolved_thinking": "a5bae1a72346a7f660b39cf68fb32f759f9e8c2414b280f5f1a57f5fc5346b27",
+    "best_accuracy": "b1ab9a7964b1d3b24f2a4dc906c4930cf8a5fabd4db8f40f9bc62f4f089f13d0",
+    "best_speed": "b6ccd39befed3a5960b44cd982f7988a300fd9ac5ca318a537d8471c3c6a21ea",
+    "best_overall": "b1ab9a7964b1d3b24f2a4dc906c4930cf8a5fabd4db8f40f9bc62f4f089f13d0"
+  },
+  "unique_modules": [
+    "starting_scripts",
+    "manual_instruct",
+    "manual_thinking",
+    "evolved_instruct",
+    "evolved_thinking"
+  ]
+}

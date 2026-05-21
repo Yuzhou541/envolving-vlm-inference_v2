@@ -1,0 +1,83 @@
+[
+  {
+    "method": "ablation_fixed_chart_code",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0002748671865901997
+  },
+  {
+    "method": "full_evochartcode_metadata",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.00027627578128885943
+  },
+  {
+    "method": "ablation_no_derived_relations",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0002838140622998253
+  },
+  {
+    "method": "ablation_no_uncertainty",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0002767195314845594
+  },
+  {
+    "method": "ablation_no_verifier",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0002757375009423413
+  },
+  {
+    "method": "code_only",
+    "split": "validation",
+    "exact_match": 0.25,
+    "relaxed_numeric": 0.28125,
+    "na_f1": 0.4266666666666667,
+    "invalid_rate": 0.0,
+    "mean_latency": 0.0006176242184210423
+  },
+  {
+    "method": "full_evochartcode",
+    "split": "validation",
+    "exact_match": 1.0,
+    "relaxed_numeric": 1.0,
+    "na_f1": 0.0,
+    "invalid_rate": 0.0,
+    "mean_latency": 9.764127499991446
+  },
+  {
+    "method": "full_evochartcode",
+    "split": "validation",
+    "exact_match": 0.53125,
+    "relaxed_numeric": 0.578125,
+    "na_f1": 0.4,
+    "invalid_rate": 0.0,
+    "mean_latency": 13.281345264844276
+  },
+  {
+    "method": "full_evochartcode",
+    "split": "validation",
+    "exact_match": 0.75,
+    "relaxed_numeric": 0.8125,
+    "na_f1": 0.8571428571428571,
+    "invalid_rate": 0.0,
+    "mean_latency": 1.5482290812524298
+  }
+]

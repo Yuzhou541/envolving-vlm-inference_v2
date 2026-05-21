@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="160">
+<rect width="900" height="160" fill="white"/>
+<g font-family="Arial" font-size="17" text-anchor="middle">
+<rect x="30" y="45" width="150" height="60" fill="#eef" stroke="#333"/><text x="105" y="80">Local Qwen Coder</text>
+<rect x="220" y="45" width="150" height="60" fill="#efe" stroke="#333"/><text x="295" y="80">Unified diff</text>
+<rect x="410" y="45" width="150" height="60" fill="#ffe" stroke="#333"/><text x="485" y="80">Throwaway eval</text>
+<rect x="600" y="45" width="150" height="60" fill="#fee" stroke="#333"/><text x="675" y="80">MAP-Elites</text>
+<path d="M180 75 H220 M370 75 H410 M560 75 H600 M750 75 H850" stroke="#333" marker-end="url(#a)"/>
+</g><defs><marker id="a" markerWidth="8" markerHeight="8" refX="8" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8 z" fill="#333"/></marker></defs>
+</svg>
