@@ -1,0 +1,25 @@
+name: evochartcode
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pillow
+  - pyyaml
+  - pydantic>=2.8
+  - opencv
+  - scipy
+  - scikit-image
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1
+  - pip:
+      - transformers==4.57.1
+      - qwen-vl-utils
+      - accelerate
+      - rapidfuzz
+      - jsonschema
+      - reportlab

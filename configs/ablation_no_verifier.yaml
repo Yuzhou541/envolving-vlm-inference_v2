@@ -1,0 +1,8 @@
+base_config: configs/charxiv_qwen3vl_2b.yaml
+name: ablation_no_verifier
+method: code_only
+split: validation
+limit: 128
+policy:
+  verifier:
+    min_confidence: 0.0

@@ -1,0 +1,20 @@
+project: evochartcode
+dataset:
+  name: charxiv
+  root: charxiv
+  source_split: val
+  task: descriptive
+  split_file: data/splits/charxiv_chart_level_split.json
+  limit: null
+chart_code_cache: data/cache/chart_codes/charxiv
+extractor:
+  backend: metadata
+  model_name: Qwen/Qwen3-VL-2B-Instruct
+  local_files_only: true
+model:
+  name: Qwen/Qwen3-VL-2B-Instruct
+  local_files_only: true
+reasoning:
+  mode: code_only
+verifier:
+  enabled: true

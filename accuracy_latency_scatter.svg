@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect width="100%" height="100%" fill="#fcfcfd" />
+<text x="50%" y="34" text-anchor="middle" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#111827">Accuracy-Latency Trade-off on Local CharXiv Dev Set</text>
+<text x="50%" y="58" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#4b5563">128 descriptive validation queries, greedy decoding, lower latency is better</text>
+<rect x="86" y="78" width="840" height="458" fill="#ffffff" stroke="#d1d5db" stroke-width="1.5" rx="10" />
+<line x1="200.02" y1="78" x2="200.02" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="200.02" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.5</text>
+<line x1="335.43" y1="78" x2="335.43" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="335.43" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.7</text>
+<line x1="470.84" y1="78" x2="470.84" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="470.84" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.9</text>
+<line x1="606.26" y1="78" x2="606.26" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="606.26" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">1.1</text>
+<line x1="741.67" y1="78" x2="741.67" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="741.67" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">1.3</text>
+<line x1="877.08" y1="78" x2="877.08" y2="536" stroke="#e5e7eb" stroke-width="1" />
+<text x="877.08" y="564" text-anchor="middle" font-family="Arial, sans-serif" font-size="13" fill="#374151">1.5</text>
+<line x1="86" y1="405.56" x2="926" y2="405.56" stroke="#e5e7eb" stroke-width="1" />
+<text x="70" y="409.56" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.45</text>
+<line x1="86" y1="271.35" x2="926" y2="271.35" stroke="#e5e7eb" stroke-width="1" />
+<text x="70" y="275.35" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.55</text>
+<line x1="86" y1="137.14" x2="926" y2="137.14" stroke="#e5e7eb" stroke-width="1" />
+<text x="70" y="141.14" text-anchor="end" font-family="Arial, sans-serif" font-size="13" fill="#374151">0.65</text>
+<line x1="86" y1="536" x2="926" y2="536" stroke="#6b7280" stroke-width="1.8" />
+<line x1="86" y1="78" x2="86" y2="536" stroke="#6b7280" stroke-width="1.8" />
+<text x="506.00" y="596" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#111827">Latency per query (seconds)</text>
+<text x="28" y="307.00" text-anchor="middle" transform="rotate(-90 28 307.00)" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#111827">Accuracy</text>
+<rect x="864.84" y="488.74" width="14" height="14" fill="#6b7280" stroke="white" stroke-width="2" rx="2" />
+<text x="859.84" y="485.74" text-anchor="end" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#111827">Baseline</text>
+<circle cx="119.85" cy="160.21" r="7" fill="#2563eb" stroke="white" stroke-width="2" />
+<text x="131.85" y="178.21" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#111827">Manual Instruct</text>
+<circle cx="247.51" cy="265.06" r="7" fill="#f59e0b" stroke="white" stroke-width="2" />
+<text x="259.51" y="299.06" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#111827">Manual Thinking</text>
+<polygon points="123.15,110.26 131.15,118.26 123.15,126.26 115.15,118.26" fill="#16a34a" stroke="white" stroke-width="2" />
+<text x="135.15" y="108.26" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#111827">Evolved Instruct</text>
+<polygon points="251.64,225.60 259.64,233.60 251.64,241.60 243.64,233.60" fill="#dc2626" stroke="white" stroke-width="2" />
+<text x="263.64" y="253.60" text-anchor="start" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="#111827">Evolved Thinking</text>
+<rect x="732" y="94" width="194" height="96" fill="#ffffff" stroke="#d1d5db" rx="10" />
+<text x="748" y="118" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#111827">Markers</text>
+<rect x="746.00" y="134.00" width="12" height="12" fill="#6b7280" stroke="white" stroke-width="2" rx="2" />
+<text x="770" y="144" font-family="Arial, sans-serif" font-size="13" fill="#374151">Baseline</text>
+<circle cx="752.00" cy="162.00" r="6" fill="#2563eb" stroke="white" stroke-width="2" />
+<text x="770" y="166" font-family="Arial, sans-serif" font-size="13" fill="#374151">Manual variants</text>
+<polygon points="752.00,177.00 759.00,184.00 752.00,191.00 745.00,184.00" fill="#16a34a" stroke="white" stroke-width="2" />
+<text x="770" y="188" font-family="Arial, sans-serif" font-size="13" fill="#374151">Evolved variants</text>
+</svg>

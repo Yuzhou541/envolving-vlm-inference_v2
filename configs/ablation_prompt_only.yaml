@@ -1,0 +1,7 @@
+base_config: configs/charxiv_qwen3vl_2b.yaml
+method: raw_vlm
+split: validation
+limit: 128
+override:
+  extractor:
+    backend: metadata

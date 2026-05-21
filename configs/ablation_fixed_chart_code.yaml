@@ -1,0 +1,8 @@
+base_config: configs/charxiv_qwen3vl_2b.yaml
+name: ablation_fixed_chart_code
+method: fixed_chart_code
+split: validation
+limit: 128
+policy:
+  verifier:
+    min_confidence: 0.4

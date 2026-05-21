@@ -1,0 +1,31 @@
+eval_config: configs/charxiv_qwen3vl_2b.yaml
+method: code_only
+split: evolution_dev
+limit: 64
+generations: 2
+candidates_per_generation: 3
+population_size: 6
+runtime_weight: 0.05
+seed: 0
+output_dir: outputs/evolution_small
+seed_policy:
+  schema:
+    optional_fields:
+      - uncertainty
+      - provenance
+  extractor:
+    prompt_style: strict_json
+    include_uncertainty: true
+  selector:
+    max_serialized_chars: 4096
+    include_provenance: false
+  reasoner:
+    mode: code_only
+    max_answer_tokens: 128
+  verifier:
+    min_confidence: 0.4
+    numeric_rel_tol: 0.05
+    rules:
+      - legend
+      - colorbar
+      - trend

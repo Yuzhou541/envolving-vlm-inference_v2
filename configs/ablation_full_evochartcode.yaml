@@ -1,0 +1,14 @@
+base_config: configs/charxiv_qwen3vl_2b.yaml
+name: full_evochartcode_metadata
+method: code_only
+split: validation
+limit: 128
+policy:
+  schema:
+    optional_fields:
+      - uncertainty
+      - provenance
+  selector:
+    max_serialized_chars: 4096
+  verifier:
+    min_confidence: 0.4
