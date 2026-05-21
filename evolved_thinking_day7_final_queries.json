@@ -1,0 +1,1154 @@
+{
+  "0_0": {
+    "figure_id": 0,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\0.jpg",
+    "subq_idx": 0,
+    "qid": 7,
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "60",
+    "is_correct": true
+  },
+  "0_1": {
+    "figure_id": 0,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\0.jpg",
+    "subq_idx": 1,
+    "qid": 13,
+    "question": "For the subplot at row 1 and column 2, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Fi-CNN, iCarL*, EEL*, NCM*, Ours-AL, Ours-AL-MML, Joint-CNN",
+    "is_correct": false
+  },
+  "0_2": {
+    "figure_id": 0,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\0.jpg",
+    "subq_idx": 2,
+    "qid": 11,
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "No",
+    "is_correct": false
+  },
+  "0_3": {
+    "figure_id": 0,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\0.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "60",
+    "is_correct": false
+  },
+  "2_0": {
+    "figure_id": 2,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\2.jpg",
+    "subq_idx": 0,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "W_H",
+    "is_correct": true
+  },
+  "2_1": {
+    "figure_id": 2,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\2.jpg",
+    "subq_idx": 1,
+    "qid": 8,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.1",
+    "is_correct": true
+  },
+  "2_2": {
+    "figure_id": 2,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\2.jpg",
+    "subq_idx": 2,
+    "qid": 7,
+    "question": "For the current plot, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.12",
+    "is_correct": true
+  },
+  "2_3": {
+    "figure_id": 2,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\2.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the current plot, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "0.12",
+    "is_correct": false
+  },
+  "3_0": {
+    "figure_id": 3,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\3.jpg",
+    "subq_idx": 0,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 2",
+    "is_correct": true
+  },
+  "3_1": {
+    "figure_id": 3,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\3.jpg",
+    "subq_idx": 1,
+    "qid": 1,
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "(b) OPT",
+    "is_correct": true
+  },
+  "3_2": {
+    "figure_id": 3,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\3.jpg",
+    "subq_idx": 2,
+    "qid": 19,
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "response": "2",
+    "is_correct": true
+  },
+  "3_3": {
+    "figure_id": 3,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\3.jpg",
+    "subq_idx": 3,
+    "qid": 12,
+    "question": "For the subplot at row 1 and column 2, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "5_0": {
+    "figure_id": 5,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\5.jpg",
+    "subq_idx": 0,
+    "qid": 8,
+    "question": "For the subplot at row 2 and column 2, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.2",
+    "is_correct": true
+  },
+  "5_1": {
+    "figure_id": 5,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\5.jpg",
+    "subq_idx": 1,
+    "qid": 5,
+    "question": "For the subplot at row 2 and column 2, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "1.2",
+    "is_correct": true
+  },
+  "5_2": {
+    "figure_id": 5,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\5.jpg",
+    "subq_idx": 2,
+    "qid": 6,
+    "question": "For the subplot at row 2 and column 2, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "10^-6",
+    "is_correct": true
+  },
+  "5_3": {
+    "figure_id": 5,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\5.jpg",
+    "subq_idx": 3,
+    "qid": 1,
+    "question": "For the subplot at row 2 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "7_0": {
+    "figure_id": 7,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\7.jpg",
+    "subq_idx": 0,
+    "qid": 17,
+    "question": "For the subplot at row 2 and column 2, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "7_1": {
+    "figure_id": 7,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\7.jpg",
+    "subq_idx": 1,
+    "qid": 10,
+    "question": "For the subplot at row 2 and column 2, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "1",
+    "is_correct": true
+  },
+  "7_2": {
+    "figure_id": 7,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\7.jpg",
+    "subq_idx": 2,
+    "qid": 2,
+    "question": "For the subplot at row 2 and column 2, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Daily New Confirmed COVID-19 Case Number (Weekly Moving Average)",
+    "is_correct": true
+  },
+  "7_3": {
+    "figure_id": 7,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\7.jpg",
+    "subq_idx": 3,
+    "qid": 14,
+    "question": "For the subplot at row 2 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "8_0": {
+    "figure_id": 8,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\8.jpg",
+    "subq_idx": 0,
+    "qid": 6,
+    "question": "For the current plot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "10^1",
+    "is_correct": true
+  },
+  "8_1": {
+    "figure_id": 8,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\8.jpg",
+    "subq_idx": 1,
+    "qid": 8,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "200000",
+    "is_correct": true
+  },
+  "8_2": {
+    "figure_id": 8,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\8.jpg",
+    "subq_idx": 2,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 1",
+    "is_correct": true
+  },
+  "8_3": {
+    "figure_id": 8,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\8.jpg",
+    "subq_idx": 3,
+    "qid": 10,
+    "question": "For the current plot, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "12_0": {
+    "figure_id": 12,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\12.jpg",
+    "subq_idx": 0,
+    "qid": 1,
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Adversarial accuracy",
+    "is_correct": true
+  },
+  "12_1": {
+    "figure_id": 12,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\12.jpg",
+    "subq_idx": 1,
+    "qid": 7,
+    "question": "For the subplot at row 1 and column 2, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "55",
+    "is_correct": true
+  },
+  "12_2": {
+    "figure_id": 12,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\12.jpg",
+    "subq_idx": 2,
+    "qid": 11,
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "No",
+    "is_correct": false
+  },
+  "12_3": {
+    "figure_id": 12,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\12.jpg",
+    "subq_idx": 3,
+    "qid": 14,
+    "question": "For the subplot at row 1 and column 2, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "13_0": {
+    "figure_id": 13,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\13.jpg",
+    "subq_idx": 0,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 2",
+    "is_correct": false
+  },
+  "13_1": {
+    "figure_id": 13,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\13.jpg",
+    "subq_idx": 1,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Attribution IoU",
+    "is_correct": true
+  },
+  "13_2": {
+    "figure_id": 13,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\13.jpg",
+    "subq_idx": 2,
+    "qid": 4,
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.4",
+    "is_correct": true
+  },
+  "13_3": {
+    "figure_id": 13,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\13.jpg",
+    "subq_idx": 3,
+    "qid": 14,
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "0.40",
+    "is_correct": false
+  },
+  "14_0": {
+    "figure_id": 14,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\14.jpg",
+    "subq_idx": 0,
+    "qid": 12,
+    "question": "For the current plot, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "2",
+    "is_correct": false
+  },
+  "14_1": {
+    "figure_id": 14,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\14.jpg",
+    "subq_idx": 1,
+    "qid": 3,
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "Accuracy (%)",
+    "is_correct": true
+  },
+  "14_2": {
+    "figure_id": 14,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\14.jpg",
+    "subq_idx": 2,
+    "qid": 8,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "14_3": {
+    "figure_id": 14,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\14.jpg",
+    "subq_idx": 3,
+    "qid": 1,
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "17_0": {
+    "figure_id": 17,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\17.jpg",
+    "subq_idx": 0,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Number of pixel-level annotations (log-scale)",
+    "is_correct": true
+  },
+  "17_1": {
+    "figure_id": 17,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\17.jpg",
+    "subq_idx": 1,
+    "qid": 9,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "5",
+    "is_correct": false
+  },
+  "17_2": {
+    "figure_id": 17,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\17.jpg",
+    "subq_idx": 2,
+    "qid": 7,
+    "question": "For the current plot, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "90",
+    "is_correct": true
+  },
+  "17_3": {
+    "figure_id": 17,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\17.jpg",
+    "subq_idx": 3,
+    "qid": 11,
+    "question": "For the current plot, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "No",
+    "is_correct": false
+  },
+  "20_0": {
+    "figure_id": 20,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\20.jpg",
+    "subq_idx": 0,
+    "qid": 9,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.05",
+    "is_correct": true
+  },
+  "20_1": {
+    "figure_id": 20,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\20.jpg",
+    "subq_idx": 1,
+    "qid": 17,
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "20_2": {
+    "figure_id": 20,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\20.jpg",
+    "subq_idx": 2,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 1",
+    "is_correct": true
+  },
+  "20_3": {
+    "figure_id": 20,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\20.jpg",
+    "subq_idx": 3,
+    "qid": 1,
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "21_0": {
+    "figure_id": 21,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\21.jpg",
+    "subq_idx": 0,
+    "qid": 12,
+    "question": "For the current plot, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "7",
+    "is_correct": false
+  },
+  "21_1": {
+    "figure_id": 21,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\21.jpg",
+    "subq_idx": 1,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "advmod, amod, case, cc, conj, det, mark, nmod, nsubj, obj, obl",
+    "is_correct": true
+  },
+  "21_2": {
+    "figure_id": 21,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\21.jpg",
+    "subq_idx": 2,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 1",
+    "is_correct": true
+  },
+  "21_3": {
+    "figure_id": 21,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\21.jpg",
+    "subq_idx": 3,
+    "qid": 9,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "26_0": {
+    "figure_id": 26,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\26.jpg",
+    "subq_idx": 0,
+    "qid": 7,
+    "question": "For the subplot at row 2 and column 1, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.95",
+    "is_correct": false
+  },
+  "26_1": {
+    "figure_id": 26,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\26.jpg",
+    "subq_idx": 1,
+    "qid": 17,
+    "question": "For the subplot at row 2 and column 1, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "4",
+    "is_correct": false
+  },
+  "26_2": {
+    "figure_id": 26,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\26.jpg",
+    "subq_idx": 2,
+    "qid": 5,
+    "question": "For the subplot at row 2 and column 1, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "1.00",
+    "is_correct": true
+  },
+  "26_3": {
+    "figure_id": 26,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\26.jpg",
+    "subq_idx": 3,
+    "qid": 13,
+    "question": "For the subplot at row 2 and column 1, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Downstream vs. Concept: Toy, N. Accepted - Toy",
+    "is_correct": false
+  },
+  "27_0": {
+    "figure_id": 27,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\27.jpg",
+    "subq_idx": 0,
+    "qid": 19,
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "response": "2",
+    "is_correct": true
+  },
+  "27_1": {
+    "figure_id": 27,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\27.jpg",
+    "subq_idx": 1,
+    "qid": 17,
+    "question": "For the subplot at row 1 and column 2, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "27_2": {
+    "figure_id": 27,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\27.jpg",
+    "subq_idx": 2,
+    "qid": 2,
+    "question": "For the subplot at row 1 and column 2, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Meta-training time steps",
+    "is_correct": true
+  },
+  "27_3": {
+    "figure_id": 27,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\27.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "100",
+    "is_correct": false
+  },
+  "29_0": {
+    "figure_id": 29,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\29.jpg",
+    "subq_idx": 0,
+    "qid": 1,
+    "question": "For the subplot at row 7 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "easy point:mass:easy",
+    "is_correct": false
+  },
+  "29_1": {
+    "figure_id": 29,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\29.jpg",
+    "subq_idx": 1,
+    "qid": 12,
+    "question": "For the subplot at row 7 and column 2, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "2",
+    "is_correct": false
+  },
+  "29_2": {
+    "figure_id": 29,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\29.jpg",
+    "subq_idx": 2,
+    "qid": 4,
+    "question": "For the subplot at row 7 and column 2, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0",
+    "is_correct": true
+  },
+  "29_3": {
+    "figure_id": 29,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\29.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 7 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "1000",
+    "is_correct": false
+  },
+  "30_0": {
+    "figure_id": 30,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\30.jpg",
+    "subq_idx": 0,
+    "qid": 10,
+    "question": "For the current plot, how many lines are there?\n    * Your final answer should be the number of lines in the plot. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "6",
+    "is_correct": false
+  },
+  "30_1": {
+    "figure_id": 30,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\30.jpg",
+    "subq_idx": 1,
+    "qid": 9,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "30_2": {
+    "figure_id": 30,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\30.jpg",
+    "subq_idx": 2,
+    "qid": 3,
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "PPL (10^2)",
+    "is_correct": true
+  },
+  "30_3": {
+    "figure_id": 30,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\30.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the current plot, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "36_0": {
+    "figure_id": 36,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\36.jpg",
+    "subq_idx": 0,
+    "qid": 7,
+    "question": "For the current plot, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "36_1": {
+    "figure_id": 36,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\36.jpg",
+    "subq_idx": 1,
+    "qid": 5,
+    "question": "For the current plot, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "36_2": {
+    "figure_id": 36,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\36.jpg",
+    "subq_idx": 2,
+    "qid": 8,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.5",
+    "is_correct": false
+  },
+  "36_3": {
+    "figure_id": 36,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\36.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the current plot, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "1.5",
+    "is_correct": false
+  },
+  "39_0": {
+    "figure_id": 39,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\39.jpg",
+    "subq_idx": 0,
+    "qid": 9,
+    "question": "For the current plot, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.00",
+    "is_correct": false
+  },
+  "39_1": {
+    "figure_id": 39,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\39.jpg",
+    "subq_idx": 1,
+    "qid": 6,
+    "question": "For the current plot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "-1.00",
+    "is_correct": true
+  },
+  "39_2": {
+    "figure_id": 39,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\39.jpg",
+    "subq_idx": 2,
+    "qid": 17,
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "39_3": {
+    "figure_id": 39,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\39.jpg",
+    "subq_idx": 3,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "40_0": {
+    "figure_id": 40,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\40.jpg",
+    "subq_idx": 0,
+    "qid": 17,
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "40_1": {
+    "figure_id": 40,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\40.jpg",
+    "subq_idx": 1,
+    "qid": 3,
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "Validation Score",
+    "is_correct": true
+  },
+  "40_2": {
+    "figure_id": 40,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\40.jpg",
+    "subq_idx": 2,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "macro, micro",
+    "is_correct": true
+  },
+  "40_3": {
+    "figure_id": 40,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\40.jpg",
+    "subq_idx": 3,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "CIT",
+    "is_correct": false
+  },
+  "41_0": {
+    "figure_id": 41,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\41.jpg",
+    "subq_idx": 0,
+    "qid": 7,
+    "question": "For the subplot at row 4 and column 3, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.98",
+    "is_correct": false
+  },
+  "41_1": {
+    "figure_id": 41,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\41.jpg",
+    "subq_idx": 1,
+    "qid": 3,
+    "question": "For the subplot at row 4 and column 3, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "Clean accuracy",
+    "is_correct": false
+  },
+  "41_2": {
+    "figure_id": 41,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\41.jpg",
+    "subq_idx": 2,
+    "qid": 9,
+    "question": "For the subplot at row 4 and column 3, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.01",
+    "is_correct": false
+  },
+  "41_3": {
+    "figure_id": 41,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\41.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 4 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "0.36",
+    "is_correct": false
+  },
+  "42_0": {
+    "figure_id": 42,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\42.jpg",
+    "subq_idx": 0,
+    "qid": 6,
+    "question": "For the current plot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "-0.8",
+    "is_correct": true
+  },
+  "42_1": {
+    "figure_id": 42,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\42.jpg",
+    "subq_idx": 1,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "PD-HDDPG, proposed, PD-DDPG, plain, LO-CU, RCU",
+    "is_correct": true
+  },
+  "42_2": {
+    "figure_id": 42,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\42.jpg",
+    "subq_idx": 2,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Epoch",
+    "is_correct": true
+  },
+  "42_3": {
+    "figure_id": 42,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\42.jpg",
+    "subq_idx": 3,
+    "qid": 14,
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "48_0": {
+    "figure_id": 48,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\48.jpg",
+    "subq_idx": 0,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 3",
+    "is_correct": true
+  },
+  "48_1": {
+    "figure_id": 48,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\48.jpg",
+    "subq_idx": 1,
+    "qid": 12,
+    "question": "For the subplot at row 1 and column 3, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "2",
+    "is_correct": false
+  },
+  "48_2": {
+    "figure_id": 48,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\48.jpg",
+    "subq_idx": 2,
+    "qid": 19,
+    "question": "What is the number of subplots?\n    * Your final answer should be the total number of subplots in the plot.\n    * If the plot does not contain subplots, answer \"1\".",
+    "response": "3",
+    "is_correct": true
+  },
+  "48_3": {
+    "figure_id": 48,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\48.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 1 and column 3, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "8.00",
+    "is_correct": false
+  },
+  "49_0": {
+    "figure_id": 49,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\49.jpg",
+    "subq_idx": 0,
+    "qid": 4,
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "2000",
+    "is_correct": true
+  },
+  "49_1": {
+    "figure_id": 49,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\49.jpg",
+    "subq_idx": 1,
+    "qid": 5,
+    "question": "For the current plot, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "10000",
+    "is_correct": true
+  },
+  "49_2": {
+    "figure_id": 49,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\49.jpg",
+    "subq_idx": 2,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 1",
+    "is_correct": true
+  },
+  "49_3": {
+    "figure_id": 49,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\49.jpg",
+    "subq_idx": 3,
+    "qid": 14,
+    "question": "For the current plot, what is the difference between the maximum and minimum values of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer.\n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "-20.00",
+    "is_correct": false
+  },
+  "51_0": {
+    "figure_id": 51,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\51.jpg",
+    "subq_idx": 0,
+    "qid": 7,
+    "question": "For the subplot at row 1 and column 1, what is the spatially highest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.3",
+    "is_correct": true
+  },
+  "51_1": {
+    "figure_id": 51,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\51.jpg",
+    "subq_idx": 1,
+    "qid": 13,
+    "question": "For the subplot at row 1 and column 1, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Default, Best, FixRes",
+    "is_correct": true
+  },
+  "51_2": {
+    "figure_id": 51,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\51.jpg",
+    "subq_idx": 2,
+    "qid": 5,
+    "question": "For the subplot at row 1 and column 1, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0",
+    "is_correct": false
+  },
+  "51_3": {
+    "figure_id": 51,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\51.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the subplot at row 1 and column 1, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "0.3",
+    "is_correct": false
+  },
+  "53_0": {
+    "figure_id": 53,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\53.jpg",
+    "subq_idx": 0,
+    "qid": 5,
+    "question": "For the subplot at row 1 and column 1, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "15.8",
+    "is_correct": false
+  },
+  "53_1": {
+    "figure_id": 53,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\53.jpg",
+    "subq_idx": 1,
+    "qid": 4,
+    "question": "For the subplot at row 1 and column 1, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0.0",
+    "is_correct": false
+  },
+  "53_2": {
+    "figure_id": 53,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\53.jpg",
+    "subq_idx": 2,
+    "qid": 9,
+    "question": "For the subplot at row 1 and column 1, what is difference between consecutive numerical tick values on the y-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the y-axis, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit y-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "1.00",
+    "is_correct": false
+  },
+  "53_3": {
+    "figure_id": 53,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\53.jpg",
+    "subq_idx": 3,
+    "qid": 8,
+    "question": "For the subplot at row 1 and column 1, what is difference between consecutive numerical tick values on the x-axis?\n    * Your final answer should be the difference between consecutive numerical tick values of the x-axis, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.\n    * If the plot does not have an explicit x-axis tick value, or if the tick values are not numerical, or if the difference is not constant between all consecutive tick values, answer \"Not Applicable\".",
+    "response": "0.00",
+    "is_correct": false
+  },
+  "56_0": {
+    "figure_id": 56,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\56.jpg",
+    "subq_idx": 0,
+    "qid": 6,
+    "question": "For the subplot at row 1 and column 2, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0",
+    "is_correct": true
+  },
+  "56_1": {
+    "figure_id": 56,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\56.jpg",
+    "subq_idx": 1,
+    "qid": 15,
+    "question": "For the subplot at row 1 and column 2, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "1.0",
+    "is_correct": true
+  },
+  "56_2": {
+    "figure_id": 56,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\56.jpg",
+    "subq_idx": 2,
+    "qid": 3,
+    "question": "For the subplot at row 1 and column 2, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "q",
+    "is_correct": true
+  },
+  "56_3": {
+    "figure_id": 56,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\56.jpg",
+    "subq_idx": 3,
+    "qid": 11,
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "No",
+    "is_correct": false
+  },
+  "57_0": {
+    "figure_id": 57,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\57.jpg",
+    "subq_idx": 0,
+    "qid": 13,
+    "question": "For the subplot at row 1 and column 2, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Score = 0, Score = 1, Score = 2, Score = 3, Score = 4, Score = 5",
+    "is_correct": true
+  },
+  "57_1": {
+    "figure_id": 57,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\57.jpg",
+    "subq_idx": 1,
+    "qid": 1,
+    "question": "For the subplot at row 1 and column 2, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Not Applicable",
+    "is_correct": false
+  },
+  "57_2": {
+    "figure_id": 57,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\57.jpg",
+    "subq_idx": 2,
+    "qid": 4,
+    "question": "For the subplot at row 1 and column 2, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "SSM",
+    "is_correct": true
+  },
+  "57_3": {
+    "figure_id": 57,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\57.jpg",
+    "subq_idx": 3,
+    "qid": 11,
+    "question": "For the subplot at row 1 and column 2, do any lines intersect?\n    * Your final answer should be \"Yes\" if any lines intersect, and \"No\" otherwise. Ignore grid lines, tick marks, and any vertical or horizontal auxiliary lines.\n    * If the plot does not contain any lines or is not considered a line plot, answer \"Not Applicable\".",
+    "response": "No",
+    "is_correct": false
+  },
+  "60_0": {
+    "figure_id": 60,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\60.jpg",
+    "subq_idx": 0,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 1",
+    "is_correct": true
+  },
+  "60_1": {
+    "figure_id": 60,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\60.jpg",
+    "subq_idx": 1,
+    "qid": 16,
+    "question": "For the current plot, what is the general trend of data from left to right?\n    * Your final answer should be within a few words, such as \"increases\", \"increases then stabilizes\".",
+    "response": "increases",
+    "is_correct": true
+  },
+  "60_2": {
+    "figure_id": 60,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\60.jpg",
+    "subq_idx": 2,
+    "qid": 4,
+    "question": "For the current plot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "1",
+    "is_correct": false
+  },
+  "60_3": {
+    "figure_id": 60,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\60.jpg",
+    "subq_idx": 3,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Rank5, Rank2, Rank1",
+    "is_correct": false
+  },
+  "61_0": {
+    "figure_id": 61,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\61.jpg",
+    "subq_idx": 0,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Noise Level",
+    "is_correct": true
+  },
+  "61_1": {
+    "figure_id": 61,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\61.jpg",
+    "subq_idx": 1,
+    "qid": 16,
+    "question": "For the current plot, what is the general trend of data from left to right?\n    * Your final answer should be within a few words, such as \"increases\", \"increases then stabilizes\".",
+    "response": "decreases",
+    "is_correct": true
+  },
+  "61_2": {
+    "figure_id": 61,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\61.jpg",
+    "subq_idx": 2,
+    "qid": 13,
+    "question": "For the current plot, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Class pair: 3 and 8, Class pair: 1 and 9",
+    "is_correct": true
+  },
+  "61_3": {
+    "figure_id": 61,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\61.jpg",
+    "subq_idx": 3,
+    "qid": 1,
+    "question": "For the current plot, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Accuracy vs Noise Level",
+    "is_correct": false
+  },
+  "62_0": {
+    "figure_id": 62,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\62.jpg",
+    "subq_idx": 0,
+    "qid": 4,
+    "question": "For the bottom subplot, what is the leftmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "10",
+    "is_correct": true
+  },
+  "62_1": {
+    "figure_id": 62,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\62.jpg",
+    "subq_idx": 1,
+    "qid": 6,
+    "question": "For the bottom subplot, what is the spatially lowest labeled tick on the y-axis?\n    * Your final answer should be the tick value on the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, based on the axis at the left. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "0",
+    "is_correct": true
+  },
+  "62_2": {
+    "figure_id": 62,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\62.jpg",
+    "subq_idx": 2,
+    "qid": 5,
+    "question": "For the bottom subplot, what is the rightmost labeled tick on the x-axis?\n    * Your final answer should be the tick value on the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer based on the axis at the bottom. Ignore units or scales that are written separately from the tick, such as units and scales from the axis label or the corner of the plot.",
+    "response": "50",
+    "is_correct": true
+  },
+  "62_3": {
+    "figure_id": 62,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\62.jpg",
+    "subq_idx": 3,
+    "qid": 15,
+    "question": "For the bottom subplot, what is the maximum value of the tick labels on the continuous legend (i.e., colorbar)?\n    * You should remove the percentage sign (if any) in your answer. \n    * If the plot does not have an explicit colorbar-based continuous legend or the legend is not considered relevant to this subplot, answer \"Not Applicable\".",
+    "response": "20",
+    "is_correct": false
+  },
+  "65_0": {
+    "figure_id": 65,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\65.jpg",
+    "subq_idx": 0,
+    "qid": 2,
+    "question": "For the current plot, what is the label of the x-axis?\n    * Your final answer should be the label of the x-axis that is explicitly written, including the case when x-axis is shared across multiple subplots. When the x-axis is present on both the top and bottom of the plot, answer the label of the x-axis at the bottom.\n    * If the plot does not have an explicit x-axis label, answer 'Not Applicable'.\n    ",
+    "response": "Source Port",
+    "is_correct": true
+  },
+  "65_1": {
+    "figure_id": 65,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\65.jpg",
+    "subq_idx": 1,
+    "qid": 17,
+    "question": "For the current plot, What is the total number of explicitly labeled ticks across all axes?\n    * Your final answer should be the total number of explicitly labeled ticks across all axes, including the case when any axis is shared across multiple subplots.",
+    "response": "10",
+    "is_correct": false
+  },
+  "65_2": {
+    "figure_id": 65,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\65.jpg",
+    "subq_idx": 2,
+    "qid": 3,
+    "question": "For the current plot, what is the label of the y-axis?\n    * Your final answer should be the label of the y-axis that is explicitly written, including the case when y-axis is shared across multiple subplots. When the y-axis is present on both the left and right of the plot, answer the label of the y-axis at the left.\n    * If the plot does not have an explicit y-axis label, answer 'Not Applicable'.",
+    "response": "Volume in Mbps (logscale)",
+    "is_correct": true
+  },
+  "65_3": {
+    "figure_id": 65,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\65.jpg",
+    "subq_idx": 3,
+    "qid": 12,
+    "question": "For the current plot, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Not Applicable",
+    "is_correct": true
+  },
+  "68_0": {
+    "figure_id": 68,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\68.jpg",
+    "subq_idx": 0,
+    "qid": 13,
+    "question": "For the subplot at row 1 and column 4, what are the names of the labels in the legend?\n    * You should write down the labels from top to bottom, then from left to right and separate the labels with commas. Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot.\n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "Source outlier, Source shared, Target",
+    "is_correct": true
+  },
+  "68_1": {
+    "figure_id": 68,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\68.jpg",
+    "subq_idx": 1,
+    "qid": 18,
+    "question": "What is the layout of the subplots?\n    * Your final answer should follow \"n by m\" format, where n is the number of rows and m is the number of columns.\n    * If the plot does not contain subplots, answer \"1 by 1\".",
+    "response": "1 by 4",
+    "is_correct": true
+  },
+  "68_2": {
+    "figure_id": 68,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\68.jpg",
+    "subq_idx": 2,
+    "qid": 12,
+    "question": "For the subplot at row 1 and column 4, how many discrete labels are there in the legend?\n    * Your final answer should account for only labels relevant to the plot in the legend, even if the legend is located outside the plot. \n    * If the plot does not have a legend or no legend is not considered relevant to this plot, answer \"Not Applicable\".",
+    "response": "3",
+    "is_correct": true
+  },
+  "68_3": {
+    "figure_id": 68,
+    "figure_path": "C:\\Users\\ROG\\Desktop\\evolving-vlm-inference-main\\charxiv\\images\\68.jpg",
+    "subq_idx": 3,
+    "qid": 1,
+    "question": "For the subplot at row 1 and column 4, what is its title?\n    * Your final answer should be the most relevant title of the plot that is explicitly written.\n    * If the plot does not have an explicit title or contains only a letter, answer 'Not Applicable'.\n    ",
+    "response": "Not Applicable",
+    "is_correct": true
+  }
+}

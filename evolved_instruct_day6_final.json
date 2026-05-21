@@ -1,0 +1,7 @@
+{
+  "accuracy": 0.6640625,
+  "num_evaluated": 128,
+  "num_errors": 0,
+  "total_time": 44.494889974594116,
+  "avg_time_per_query": 0.34761632792651653
+}
